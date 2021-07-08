@@ -9,9 +9,60 @@
     <link rel="stylesheet" href="styles/style.css">
 
     <title>Google Homepage</title>
-    
+
 </head>
+
 <body>
+
+    <header>
+       
+        <nav id="navbar">
+            <ul>
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"/></svg></a></li>
+                <li><a href="https://github.com/shreyas-9c/"><img id="profile-img" src="https://lh3.googleusercontent.com/ogw/ADea4I6BCXjVx-0vLW0MHQphwaxmb7a7UhheXtRJutEw-A=s32-c-mo" alt="profile image"></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="title">
+            <img src="images/googlelogo.png" alt="google logo">
+        </section>
+
+        <section>
+
+            <form id="search" action="#">
+
+                <!--Search Icon-->
+                <svg id="search-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                
+                <!------Search Input------>
+                <label for="search-in"></label>
+                <input id="search-in" type="search" name="search">
+                
+                <!--Mic Logo-->
+                <span>
+                    <img id="mic-img" src="https://imgr.search.brave.com/tC2Hv-VcN5lOHeW_RJpDdNcSwbnJoXD1jKVumadbFAA/fit/880/920/no/1/aHR0cHM6Ly93d3cu/cGluY2xpcGFydC5j/b20vcGljZGlyL21p/ZGRsZS8xOTEtMTkx/NzEzNF9nb29nbGUt/dm9pY2UtbG9nby1w/bmctY2xpcGFydC1t/aWNyb3Bob25lLWdv/b2dsZS12b2ljZS5w/bmc" alt="google mic logo">
+                </span>  
+                
+                <!--Search Buttons-->
+                <div class="buttons">
+                    <button id="google-search"><a href="#">Google Search</a></button>
+                    <button id="im-feeling-lucky"><a href="#">I'm Feeling Lucky</a></button>
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer></footer>
     
 </body>
+
 </html>
