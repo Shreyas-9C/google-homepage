@@ -15,53 +15,93 @@
 <body>
 
     <header>
-       
+        
+        <!-- Navigation Bar -->
         <nav id="navbar">
-            <ul>
-                <li><a href="#">Gmail</a></li>
-                <li><a href="#">Images</a></li>
-                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"/></svg></a></li>
-                <li><a href="https://github.com/shreyas-9c/"><img id="profile-img" src="https://lh3.googleusercontent.com/ogw/ADea4I6BCXjVx-0vLW0MHQphwaxmb7a7UhheXtRJutEw-A=s32-c-mo" alt="profile image"></a></li>
+            <ul id="nav-list">
+
+                <li><a href="#" class="nav-link">Gmail</a></li>
+
+                <li><a href="#" class="nav-link">Images</a></li>
+
+                <li><a  href="#" class="nav-link"></a><svg id="apps" class="nav-link-hover" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"/></svg></li>
+
+                <li><a href="https://github.com/shreyas-9c" class="nav-link" target="blank"><img id="profile-img" class="nav-link-hover" src="images/shreyas.png" alt="profile image"></a></li>
+
             </ul>
         </nav>
-
     </header>
 
+    <!-- main -->
     <main>
 
-        <section id="title">
-            <img src="images/googlelogo.png" alt="google logo">
+        <section id="main-section" class="flex-col">
+            
+            <!-- Google logo -->
+            <section id="title">
+                <img src="images/googlelogo_color.png" alt="Google logo">
+            </section>
+
+            <!-- Search section -->
+            <section id="search" class="flex-col">
+                
+                <!-- Search form -->
+                <form id="search-form" action="#">
+                    
+                    <div class="form-item">
+                    
+                        <!-- Search logo -->
+                        <span id="search-logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+                        </span>
+                        
+                        <!-- Search input -->
+                        <label for="search-input"></label>
+                        <input id="search-input" type="search">
+                        
+                        <!-- Mic logo -->
+                        <span id="mic-logo"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24"/><rect fill="none" height="24" width="24"/><rect fill="none" height="24" width="24"/></g><g><g/><g><path d="M12,14c1.66,0,3-1.34,3-3V5c0-1.66-1.34-3-3-3S9,3.34,9,5v6C9,12.66,10.34,14,12,14z"/><path d="M17,11c0,2.76-2.24,5-5,5s-5-2.24-5-5H5c0,3.53,2.61,6.43,6,6.92V21h2v-3.08c3.39-0.49,6-3.39,6-6.92H17z"/></svg></span>
+                    </div>
+
+                    <!-- Search buttons -->
+                    <div id="buttons" class="form-item">
+
+                        <div class="search-button">
+                            <button>Google Search</button>
+                        </div>
+
+                        <div class="search-button">
+                            <button>I'm Feeling Lucky</button>
+                        </div>
+                    </div>
+
+                </form>
+            </section>
+
         </section>
-
-        <section>
-
-            <form id="search" action="#">
-
-                <!--Search Icon-->
-                <svg id="search-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-                
-                <!------Search Input------>
-                <label for="search-in"></label>
-                <input id="search-in" type="search" name="search">
-                
-                <!--Mic Logo-->
-                <span>
-                    <img id="mic-img" src="https://imgr.search.brave.com/tC2Hv-VcN5lOHeW_RJpDdNcSwbnJoXD1jKVumadbFAA/fit/880/920/no/1/aHR0cHM6Ly93d3cu/cGluY2xpcGFydC5j/b20vcGljZGlyL21p/ZGRsZS8xOTEtMTkx/NzEzNF9nb29nbGUt/dm9pY2UtbG9nby1w/bmctY2xpcGFydC1t/aWNyb3Bob25lLWdv/b2dsZS12b2ljZS5w/bmc" alt="google mic logo">
-                </span>  
-                
-                <!--Search Buttons-->
-                <div class="buttons">
-                    <button id="google-search"><a href="#">Google Search</a></button>
-                    <button id="im-feeling-lucky"><a href="#">I'm Feeling Lucky</a></button>
-                </div>
-
-            </form>
-
-        </section>
-
     </main>
 
-    <footer></footer>
+    <!-- footer -->
+    <footer>
+        
+        <section id="footer-section">
+            
+            <div id="nation" class="footer-txt">India</div>
+
+            <hr>
+
+            <section id="footer-links">
+                <span><a href="#" class="footer-txt">About</a></span>
+                <span><a href="#" class="footer-txt">Advertising</a></span>
+                <span><a href="#" class="footer-txt">Business</a></span>
+                <span><a href="#" class="footer-txt">How Search works</a></span>
+                <span><a href="#" class="footer-txt">Privacy</a></span>
+                <span><a href="#" class="footer-txt">Terms</a></span>
+                <span><a href="#" class="footer-txt">Settings</a></span>
+            </section>
+
+        </section>
+    </footer>
     
 </body>
 
